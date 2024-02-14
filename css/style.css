@@ -1,0 +1,137 @@
+*   {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    min-height: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: #436850;
+    color: white;
+    padding: 5px;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+main {
+    margin: 10px auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    text-align: justify;
+}
+
+h4 {
+    text-align: center;
+    color: #12372A;
+    background-color: #ADBC9F;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+.container {
+    margin: 20px 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.box {
+    border: solid 1px #ADBC9F;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+label {
+    margin: 4px 0;
+    color: #12372A;
+    font-weight: bold;
+}
+
+input {
+    border: solid 1px #12372A;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #12372A;
+    font-weight: bold;
+}
+
+textarea {
+    border: solid 1px #12372A;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #12372A;
+}
+
+.action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: solid 1px #436850;
+    background-color: #436850;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: .95;
+}
+
+button:active {
+    box-shadow: 0 1px 4px #12372A;
+}
+
+.formula {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 80%;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .formula {
+        font-size: 14px;
+    }
+}

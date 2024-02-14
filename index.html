@@ -1,1 +1,55 @@
-# signoe.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2 id="logo">Konversi Suhu App</h2>
+    </header>
+    <main>
+        <div class="container">
+            <p>Masukkan suhu derajat yang akan dikonversi ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk satuan yang diinginkan.</p>
+            <form id="conversionTemperature">
+                <div class="form-control">
+                    <label for="input">Celsius (°C):</label>
+                    <input type="number" name="input" id="input">
+                </div>
+                <div class="action">
+                    <button type="submit" id="konversi">Konversi</button>
+                    <button type="reset" id="reset">Reset</button>
+                    <button type="button" id="reverse"><img src="assets/swap_vert.svg" alt=""></button>
+                </div>
+                <div class="form-control">
+                    <label for="result">Fahrenheit (°F):</label>
+                    <input type="number" name="result" id="result" readonly>
+                </div>
+                <div class="form-control">
+                    <label for="kalkulasi">Cara Kalkulasi</label>
+                    <textarea name="" id="kalkulasi" cols="10" rows="5" readonly></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="container">
+                <h4>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h4>
+                <div class="box">
+                    <p>Suhu <span class="bold italic">S</span> dalam derajat Fahrenheit (°F) sama dengan suhu <span class="bold italic">S</span> dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+                    <p class="formula"><span class="italic">S</span><sub>(°F)</sub>=(<span class="italic">S</span><sub>(°C)</sub>×9/5)+32</p>
+                </div>
+            </div>
+            <div class="container">
+                <h4>Cara Konversi Dari Fahrenheit (°C) ke Celsius (°F)</h4>
+                <div class="box">
+                    <p>Suhu <span class="bold italic">S</span> dalam derajat Celsius (°C) sama dengan suhu <span class="bold italic">S</span> dalam derajat Fahrenheit (°F) kurangi 32 lalu kali 5/9.</p>
+                    <p class="formula"><span class="italic">S</span><sub>(°C)</sub>=(<span class="italic">S</span><sub>(°F)</sub>-32)*5/9</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
